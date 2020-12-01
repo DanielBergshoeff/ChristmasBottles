@@ -1,21 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityAtoms;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class Ripple : MonoBehaviour
 {
     public static RippleEvent DestroyEvent;
+    public RippleValueList AllRipples;
     public float totalSize = 1f;
     public float timeTillFull = 1f;
 
     private float startTime = 0f;
     private bool growing = false;
 
-    void Start() {
+    private void Awake() {
         DestroyEvent = new RippleEvent();
         startTime = Time.time;
         growing = true;
+        AllRipples.Add(this);
     }
 
     private void Update() {
@@ -33,6 +36,10 @@ public class Ripple : MonoBehaviour
             t = t / timeTillFull;
             transform.localScale = new Vector3(t * totalSize, t * totalSize, t * totalSize);
         }
+    }
+
+    private void OnDestroy() {
+        AllRipples.Remove(this);
     }
 }
 

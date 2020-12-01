@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Water
+  - Ripple
   layers:
   - Default
   - TransparentFX
