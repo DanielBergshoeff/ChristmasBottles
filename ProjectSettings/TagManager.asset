@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Water
   - Ripple
+  - Current
   layers:
   - Default
   - TransparentFX
