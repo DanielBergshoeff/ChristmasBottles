@@ -57,6 +57,7 @@ public class LetterSystem : MonoBehaviour
     }
 
     public void CloseLetter() {
+        Debug.Log("Close");
         currentLetter = null;
         Letter.SetActive(false);
         NextLevelEvent.Raise();
