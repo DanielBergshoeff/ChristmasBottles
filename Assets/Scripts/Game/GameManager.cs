@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     public Image FadePanel;
     public float FadeTime = 3f;
 
+    [Header("Introduction")]
+    public Letter IntroductionText;
+    public float IntroTimePerPart = 5f;
+
     private Color fadeColor;
     private float currentFade;
 
@@ -26,6 +30,7 @@ public class GameManager : MonoBehaviour
     private void Start() {
         RestartGameEvent.Register(StartRestartGame);
         NextLevelEvent.Register(StartNextLevel);
+
 
         FadeIn();
     }
