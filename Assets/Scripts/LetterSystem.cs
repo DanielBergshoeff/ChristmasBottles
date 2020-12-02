@@ -33,14 +33,28 @@ public class LetterSystem : MonoBehaviour
         currentPart++;
         LetterText.text = currentLetter.Parts[currentPart];
 
-        if(currentPart == currentLetter.Parts.Count - 1) {
+        UpdateButtons();
+    }
+
+    private void UpdateButtons() {
+        if (currentPart == 0) {
+            PreviousButton.SetActive(false);
+        }
+        else {
+            PreviousButton.SetActive(true);
+        }
+
+        if (currentPart < currentLetter.Parts.Count - 1) {
+            NextButton.SetActive(true);
+        }
+
+        if (currentPart == currentLetter.Parts.Count - 1) {
             NextButton.SetActive(false);
             CloseLetterButton.SetActive(true);
         }
         else {
             NextButton.SetActive(true);
-            if (currentPart > 0)
-                PreviousButton.SetActive(true);
+            CloseLetterButton.SetActive(false);
         }
     }
 
@@ -51,13 +65,10 @@ public class LetterSystem : MonoBehaviour
         currentPart--;
         LetterText.text = currentLetter.Parts[currentPart];
 
-        if(currentPart == 0) {
-            PreviousButton.SetActive(false);
-        }
+        UpdateButtons();
     }
 
     public void CloseLetter() {
-        Debug.Log("Close");
         currentLetter = null;
         Letter.SetActive(false);
         NextLevelEvent.Raise();
