@@ -13,9 +13,7 @@ public class Bottle : MonoBehaviour
     private List<Ripple> myRipples;
     private List<Current> myCurrents;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    private void Awake() {
         myRigidbody = GetComponent<Rigidbody>();
         myRipples = new List<Ripple>();
         myCurrents = new List<Current>();
@@ -75,12 +73,18 @@ public class Bottle : MonoBehaviour
     }
 
     public void RippleRemoved(Ripple r) {
+        if (myRipples == null)
+            return;
+
         if (myRipples.Contains(r)){
             myRipples.Remove(r);
         }
     }
 
     public void CurrentRemoved(Current c) {
+        if (myCurrents == null)
+            return;
+
         if (myCurrents.Contains(c)) {
             myCurrents.Remove(c);
         }

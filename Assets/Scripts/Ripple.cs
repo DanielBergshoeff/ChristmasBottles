@@ -38,7 +38,7 @@ public class Ripple : MonoBehaviour
         }
     }
 
-    private void OnDestroy() {
+    private void OnDisable() {
         AllRipples.Remove(this);
     }
 }
