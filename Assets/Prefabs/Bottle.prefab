@@ -201,9 +201,10 @@ GameObject:
   - component: {fileID: 589791270}
   - component: {fileID: 589791271}
   - component: {fileID: 7630966122503674883}
+  - component: {fileID: 1313806615}
   m_Layer: 0
   m_Name: Bottle
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -324,3 +325,20 @@ MonoBehaviour:
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+--- !u!114 &1313806615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6547865943097270876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7908d56fadd6b9f40818551413aebd86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RestartGameEvent: {fileID: 11400000, guid: 053dde0b6b1498c45971d07f570e94ca, type: 2}
+  BreakTag: {fileID: 11400000, guid: cf23239569ef11645be56128cc2d8bdb, type: 2}
+  Phases: 3
+  VelocityForCrack: {fileID: 11400000, guid: 95d3ef44e48aa1045b37f8d4c9b22d7c, type: 2}
+  CurrentPhase: {fileID: 11400000, guid: 3d5c94c606bc57f4da02141ad4e899d1, type: 2}
