@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75feba4dec8d44f0fb83f34e749e4dc3, type: 3}
-  m_Name: DialogueEvent
+  m_Script: {fileID: 11500000, guid: 04d35e2eb934747da9d77a3af62bb8ca, type: 3}
+  m_Name: InstantFadeEvent
   m_EditorClassIdentifier: 
   _developerDescription: 
   _replayBufferSize: 0
-  _inspectorRaiseValue: Lets give this bad boy a test! How's it looking?
