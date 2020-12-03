@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ec090e2e4390854dabf2189243fb98c, type: 3}
+  m_Name: ThirdLetter
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value:
+    Parts: []
+  _changed: {fileID: 0}
+  _changedWithHistory: {fileID: 0}
+  _triggerChangedOnOnEnable: 0
+  _triggerChangedWithHistoryOnOnEnable: 0
+  _oldValue:
+    Parts: []
+  _initialValue:
+    Parts:
+    - {fileID: 21300000, guid: 717901a08f4ad4d4ba53bec4ebc94e07, type: 3}
+    - {fileID: 21300000, guid: 500c7d8f163ef3446a63991ef856cddd, type: 3}
+    - {fileID: 21300000, guid: d195fd8ab4bd1fa459437cadcd0983c4, type: 3}
+    - {fileID: 21300000, guid: baae8a7096ad786408824837637543cb, type: 3}
+    - {fileID: 21300000, guid: 81d4de591ef808e44a8ce6320e45ccef, type: 3}
+    - {fileID: 21300000, guid: 55e7fb79f710fe6448c948b861ead14a, type: 3}
+  _preChangeTransformers: []
