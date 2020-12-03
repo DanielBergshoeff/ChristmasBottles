@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5fa9ece4b360243be0291e23edf4a3, type: 3}
+  m_Name: FirstLetter
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value:
+    Parts: []
+  _changed: {fileID: 0}
+  _changedWithHistory: {fileID: 0}
+  _triggerChangedOnOnEnable: 0
+  _triggerChangedWithHistoryOnOnEnable: 0
+  _oldValue:
+    Parts: []
+  _initialValue:
+    Parts:
+    - "IT\u2019S CHRISTMAS! Merry Christmas!!  I love Christmas, it\u2019s the happiest
+      day of the year, because dad is always home. Snow is so pretty, and I can throw
+      it at Jack. Jack is my brother, he let me write this message. He will put it
+      in the bottle. We\u2019re gonna go to grandma now, but she\u2019s a little
+      weird. I do like her fries, though. I have to go now. Love, Laila. 25-12-1912. "
+  _preChangeTransformers: []

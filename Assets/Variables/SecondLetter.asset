@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5fa9ece4b360243be0291e23edf4a3, type: 3}
+  m_Name: SecondLetter
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value:
+    Parts:
+    - "Dearest person to get this message,  Exactly five years before writing this
+      (it is now christmas day 1917), I wrote a message in a bottle and threw it
+      into the water at exactly the place I am now, a beach in California. The same
+      day, I met this guy who ended up being the cutest guy I\u2019ve ever seen,
+      with the loveliest laugh and a collection of self made playing cards, how cool
+      is that!?  "
+    - "We\u2019ve been good friends from the moment we met, and I think if I want
+      to keep him by my side, I better make him my boyfriend, before he starts liking
+      other girls.  Anyway, that\u2019s not what this letter is about. You see, I
+      figured if last time I sent a message in a bottle I got lucky like this, perhaps
+      I can gather some more luck this way. "
+    - "My grandma has been getting more and more forgetful. Mom and dad said it\u2019s
+      normal for this to happen when you get older, but I can hear them whispering
+      when they think Jack (my brother) and I can\u2019t hear them, and it\u2019s
+      more serious than they make it sound. "
+    - "My grandma once told me that if enough people really wish for something to
+      happen on Christmas, their wish has a chance of being fulfilled. So I\u2019ve
+      added a paper with my wish on it to this bottle. If you find this bottle, please
+      throw it back into the water, so we can make as many people as possible wish
+      for my grandma to get better.  "
+    - If the person that finds this has a wish as well, perhaps they can add it to
+      mine. Who knows what kind of things can happen.  Love, Laila. 25-12-1917
+  _changed: {fileID: 0}
+  _changedWithHistory: {fileID: 0}
+  _triggerChangedOnOnEnable: 0
+  _triggerChangedWithHistoryOnOnEnable: 0
+  _oldValue:
+    Parts:
+    - "Dearest person to get this message,  Exactly five years before writing this
+      (it is now christmas day 1917), I wrote a message in a bottle and threw it
+      into the water at exactly the place I am now, a beach in California. The same
+      day, I met this guy who ended up being the cutest guy I\u2019ve ever seen,
+      with the loveliest laugh and a collection of self made playing cards, how cool
+      is that!?  "
+    - "We\u2019ve been good friends from the moment we met, and I think if I want
+      to keep him by my side, I better make him my boyfriend, before he starts liking
+      other girls.  Anyway, that\u2019s not what this letter is about. You see, I
+      figured if last time I sent a message in a bottle I got lucky like this, perhaps
+      I can gather some more luck this way. "
+    - "My grandma has been getting more and more forgetful. Mom and dad said it\u2019s
+      normal for this to happen when you get older, but I can hear them whispering
+      when they think Jack (my brother) and I can\u2019t hear them, and it\u2019s
+      more serious than they make it sound. "
+    - "My grandma once told me that if enough people really wish for something to
+      happen on Christmas, their wish has a chance of being fulfilled. So I\u2019ve
+      added a paper with my wish on it to this bottle. If you find this bottle, please
+      throw it back into the water, so we can make as many people as possible wish
+      for my grandma to get better.  "
+    - If the person that finds this has a wish as well, perhaps they can add it to
+      mine. Who knows what kind of things can happen.  Love, Laila. 25-12-1917
+  _initialValue:
+    Parts:
+    - "Dearest person to get this message,  Exactly five years before writing this
+      (it is now christmas day 1917), I wrote a message in a bottle and threw it
+      into the water at exactly the place I am now, a beach in California. The same
+      day, I met this guy who ended up being the cutest guy I\u2019ve ever seen,
+      with the loveliest laugh and a collection of self made playing cards, how cool
+      is that!?  "
+    - "We\u2019ve been good friends from the moment we met, and I think if I want
+      to keep him by my side, I better make him my boyfriend, before he starts liking
+      other girls.  Anyway, that\u2019s not what this letter is about. You see, I
+      figured if last time I sent a message in a bottle I got lucky like this, perhaps
+      I can gather some more luck this way. "
+    - "My grandma has been getting more and more forgetful. Mom and dad said it\u2019s
+      normal for this to happen when you get older, but I can hear them whispering
+      when they think Jack (my brother) and I can\u2019t hear them, and it\u2019s
+      more serious than they make it sound. "
+    - "My grandma once told me that if enough people really wish for something to
+      happen on Christmas, their wish has a chance of being fulfilled. So I\u2019ve
+      added a paper with my wish on it to this bottle. If you find this bottle, please
+      throw it back into the water, so we can make as many people as possible wish
+      for my grandma to get better.  "
+    - If the person that finds this has a wish as well, perhaps they can add it to
+      mine. Who knows what kind of things can happen.  Love, Laila. 25-12-1917
+  _preChangeTransformers: []
