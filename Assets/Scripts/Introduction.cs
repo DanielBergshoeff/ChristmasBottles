@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Introduction : MonoBehaviour
 {
+    public StringEvent SwitchMusic;
+    [FMODUnity.EventRef]
+    public string IntroMusic;
     public FloatEvent FadeInEvent;
     public StringEvent DialogueEvent;
     public VoidEvent InstantFadeEvent;
@@ -21,6 +24,7 @@ public class Introduction : MonoBehaviour
     {
         InstantFadeEvent.Raise();
         Invoke("StartIntro", StartWaitTime);
+        SwitchMusic.Raise(IntroMusic);
     }
 
     private void StartIntro() {

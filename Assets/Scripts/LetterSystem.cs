@@ -7,6 +7,12 @@ using UnityAtoms;
 
 public class LetterSystem : MonoBehaviour
 {
+    [FMODUnity.EventRef]
+    public string LetterOpen;
+
+    [FMODUnity.EventRef]
+    public string LetterClose;
+
     public VoidEvent NextLevelEvent;
 
     public GameObject Letter;
@@ -25,6 +31,8 @@ public class LetterSystem : MonoBehaviour
         if(currentLetter.Parts.Count > 0) {
             NextButton.SetActive(true);
         }
+
+        AudioManager.PlayOnMe(LetterOpen, transform);
 
         NextPart();
     }
@@ -71,6 +79,9 @@ public class LetterSystem : MonoBehaviour
     public void CloseLetter() {
         currentLetter = null;
         Letter.SetActive(false);
+
+        AudioManager.PlayOnMe(LetterClose, transform);
+
         NextLevelEvent.Raise();
     }
 }
