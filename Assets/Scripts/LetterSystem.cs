@@ -46,9 +46,9 @@ public class LetterSystem : MonoBehaviour
         }
 
         spriteObjects = new List<GameObject>();
-        foreach(Sprite s in l.Parts) {
+        for (int i = 0; i < l.Parts.Count; i++) {
             GameObject go = Instantiate(LetterPartPrefab);
-            go.GetComponent<Image>().sprite = s;
+            go.GetComponent<Image>().sprite = l.Parts[i];
             spriteObjects.Add(go);
             go.transform.SetParent(Letter.transform);
             go.transform.localPosition = Vector3.zero;
