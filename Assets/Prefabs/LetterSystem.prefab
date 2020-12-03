@@ -76,7 +76,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 390, y: -161}
+  m_AnchoredPosition: {x: 381, y: 40}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2540190580593957641
@@ -341,7 +341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1392248856907868929
 RectTransform:
   m_ObjectHideFlags: 0
@@ -415,7 +415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4146445222943703941
 RectTransform:
   m_ObjectHideFlags: 0
@@ -514,18 +514,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5522935922006467268}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5367259906437521070}
-        m_MethodName: NextPart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &4728353750220878455
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5724317270609472953
 RectTransform:
   m_ObjectHideFlags: 0
@@ -951,10 +940,10 @@ MonoBehaviour:
     textComponent: {fileID: 7542906309280611715}
     characterCount: 6
     spriteCount: 0
-    spaceCount: 5
+    spaceCount: 6
     wordCount: 1
     linkCount: 0
-    lineCount: 5
+    lineCount: 6
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1140,7 +1129,7 @@ GameObject:
   - component: {fileID: 4319640867528638929}
   - component: {fileID: 2960018798692062070}
   - component: {fileID: 5367259906437521070}
-  - component: {fileID: 7458057484351582186}
+  - component: {fileID: 2671946603389992073}
   m_Layer: 5
   m_Name: LetterSystem
   m_TagString: Untagged
@@ -1242,13 +1231,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LetterOpen: event:/Sound Design/LetterOpen
   LetterClose: event:/Sound Design/BottleClose
+  LetterPartPrefab: {fileID: 9068139826886838999, guid: 1af38870cf8f3474d8cdc22371eb3350,
+    type: 3}
   NextLevelEvent: {fileID: 11400000, guid: 5d3ec6760c805ba4f9902b5de69e431b, type: 2}
   Letter: {fileID: 1688396022273611098}
-  LetterText: {fileID: 7542906309280611715}
   NextButton: {fileID: 4567094429644613630}
   PreviousButton: {fileID: 5783597454832181657}
   CloseLetterButton: {fileID: 2022230344768588487}
---- !u!114 &7458057484351582186
+--- !u!114 &2671946603389992073
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1257,7 +1247,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8767834858224339983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de4f1c6c5d9c52b4db251191cf95e69d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c70d8e6d3a55ca4f99744fc6d78410e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _developerDescription: 
@@ -1279,7 +1269,7 @@ MonoBehaviour:
   _replayEventBufferOnRegister: 0
   _eventReference:
     _usage: 0
-    _event: {fileID: 11400000, guid: c7740332dee2147468e1242dd7090d35, type: 2}
+    _event: {fileID: 11400000, guid: bf0b4cbbc8dd7ca4a8001bda2fbc8b7f, type: 2}
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}

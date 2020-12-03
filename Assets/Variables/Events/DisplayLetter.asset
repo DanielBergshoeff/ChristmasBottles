@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f64645089b48fb42bb17ce79017e7e3, type: 3}
+  m_Script: {fileID: 11500000, guid: a630db67c8348934c9b0067c257994cf, type: 3}
   m_Name: DisplayLetter
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _replayBufferSize: 0
+  _replayBufferSize: 1
   _inspectorRaiseValue:
     Parts: []

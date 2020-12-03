@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Land : MonoBehaviour
 {
-    public LetterEvent DisplayLetterEvent;
-    public LetterVariable MyLetter;
+    public SpriteLetterEvent DisplayLetterEvent;
+    public SpriteLetterVariable MyLetter;
 
     private bool triggered = false;
 

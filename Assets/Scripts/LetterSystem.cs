@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityAtoms.BaseAtoms;
 using UnityAtoms;
+using UnityEngine.UI;
 
 public class LetterSystem : MonoBehaviour
 {
@@ -13,23 +14,45 @@ public class LetterSystem : MonoBehaviour
     [FMODUnity.EventRef]
     public string LetterClose;
 
+    public GameObject LetterPartPrefab;
+
     public VoidEvent NextLevelEvent;
 
     public GameObject Letter;
-    public TextMeshProUGUI LetterText;
     public GameObject NextButton;
     public GameObject PreviousButton;
     public GameObject CloseLetterButton;
 
-    private Letter currentLetter;
+    private SpriteLetter currentLetter;
+    private List<GameObject> spriteObjects;
     private int currentPart = 0;
 
-    public void ShowLetter(Letter l) {
+    private void Update() {
+        if (currentLetter == null)
+            return;
+
+        if (Input.GetMouseButtonDown(0)) {
+            if (currentPart < spriteObjects.Count - 1)
+                NextPart();
+        }
+    }
+
+    public void ShowLetter(SpriteLetter l) {
         Letter.SetActive(true);
         currentPart = -1;
         currentLetter = l;
         if(currentLetter.Parts.Count > 0) {
             NextButton.SetActive(true);
+        }
+
+        spriteObjects = new List<GameObject>();
+        foreach(Sprite s in l.Parts) {
+            GameObject go = Instantiate(LetterPartPrefab);
+            go.GetComponent<Image>().sprite = s;
+            spriteObjects.Add(go);
+            go.transform.SetParent(Letter.transform);
+            go.transform.localPosition = Vector3.zero;
+            go.SetActive(false);
         }
 
         AudioManager.PlayOnMe(LetterOpen, transform);
@@ -39,22 +62,18 @@ public class LetterSystem : MonoBehaviour
 
     public void NextPart() {
         currentPart++;
-        LetterText.text = currentLetter.Parts[currentPart];
+        spriteObjects[currentPart].SetActive(true);
 
         UpdateButtons();
     }
 
     private void UpdateButtons() {
-        if (currentPart == 0) {
+        /*if (currentPart == 0) {
             PreviousButton.SetActive(false);
         }
         else {
             PreviousButton.SetActive(true);
-        }
-
-        if (currentPart < currentLetter.Parts.Count - 1) {
-            NextButton.SetActive(true);
-        }
+        }*/
 
         if (currentPart == currentLetter.Parts.Count - 1) {
             NextButton.SetActive(false);
@@ -70,14 +89,18 @@ public class LetterSystem : MonoBehaviour
         if (currentPart - 1 < 0)
             return;
 
+        spriteObjects[currentPart].SetActive(false);
         currentPart--;
-        LetterText.text = currentLetter.Parts[currentPart];
+
 
         UpdateButtons();
     }
 
     public void CloseLetter() {
         currentLetter = null;
+        foreach(GameObject go in spriteObjects) {
+            Destroy(go);
+        }
         Letter.SetActive(false);
 
         AudioManager.PlayOnMe(LetterClose, transform);
@@ -90,4 +113,10 @@ public class LetterSystem : MonoBehaviour
 public class Letter
 {
     public List<string> Parts;
+}
+
+[System.Serializable]
+public class SpriteLetter
+{
+    public List<Sprite> Parts;
 }

@@ -9,24 +9,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5fa9ece4b360243be0291e23edf4a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ec090e2e4390854dabf2189243fb98c, type: 3}
   m_Name: FirstLetter
   m_EditorClassIdentifier: 
   _developerDescription: 
   _id: 
   _value:
-    Parts: []
+    Parts:
+    - {fileID: 21300000, guid: 0dc2b40aac9d0a04e829e2fedf2356d4, type: 3}
   _changed: {fileID: 0}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 0
   _triggerChangedWithHistoryOnOnEnable: 0
   _oldValue:
-    Parts: []
+    Parts:
+    - {fileID: 21300000, guid: 0dc2b40aac9d0a04e829e2fedf2356d4, type: 3}
   _initialValue:
     Parts:
-    - "IT\u2019S CHRISTMAS! Merry Christmas!!  I love Christmas, it\u2019s the happiest
-      day of the year, because dad is always home. Snow is so pretty, and I can throw
-      it at Jack. Jack is my brother, he let me write this message. He will put it
-      in the bottle. We\u2019re gonna go to grandma now, but she\u2019s a little
-      weird. I do like her fries, though. I have to go now. Love, Laila. 25-12-1912. "
+    - {fileID: 21300000, guid: 0dc2b40aac9d0a04e829e2fedf2356d4, type: 3}
   _preChangeTransformers: []
