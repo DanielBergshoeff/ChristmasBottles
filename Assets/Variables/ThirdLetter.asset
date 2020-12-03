@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5fa9ece4b360243be0291e23edf4a3, type: 3}
+  m_Name: ThirdLetter
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value:
+    Parts:
+    - 'Dearest recipient,   On the day of writing this message, I received a message
+      in a bottle. I have left that message in the bottle, so you may read it as
+      well. It is written by a young girl by the name of Laila, whose grandma is
+      likely struggling with dementia, who wishes for her to get better. '
+    - 'I thought it was such a sweet message, and the craziest thing is that it actually
+      ended up right in front of my feet at a beach on Christmas day.  The tone of
+      the message really reminded me of my own daughter. She was just as sweet and
+      caring at that age, which made me so proud at the time. '
+    - "These days, we\u2019re not as close as we used to be, but I know she has been
+      having a really rough time, as she has recently lost her husband in the war.
+      I know it must be especially hard during this time of year. She and their kids
+      are missing him dearly."
+    - "I hope she can still find meaning and joy with her children during Christmas,
+      and I\u2019ve decided to add that as my wish on Laila\u2019s list. Please continue
+      to follow Laila\u2019s instructions if you do find this bottle. "
+    - 'With kind regards, Hans 25-12-1918 '
+  _changed: {fileID: 0}
+  _changedWithHistory: {fileID: 0}
+  _triggerChangedOnOnEnable: 0
+  _triggerChangedWithHistoryOnOnEnable: 0
+  _oldValue:
+    Parts:
+    - 'Dearest recipient,   On the day of writing this message, I received a message
+      in a bottle. I have left that message in the bottle, so you may read it as
+      well. It is written by a young girl by the name of Laila, whose grandma is
+      likely struggling with dementia, who wishes for her to get better. '
+    - 'I thought it was such a sweet message, and the craziest thing is that it actually
+      ended up right in front of my feet at a beach on Christmas day.  The tone of
+      the message really reminded me of my own daughter. She was just as sweet and
+      caring at that age, which made me so proud at the time. '
+    - "These days, we\u2019re not as close as we used to be, but I know she has been
+      having a really rough time, as she has recently lost her husband in the war.
+      I know it must be especially hard during this time of year. She and their kids
+      are missing him dearly."
+    - "I hope she can still find meaning and joy with her children during Christmas,
+      and I\u2019ve decided to add that as my wish on Laila\u2019s list. Please continue
+      to follow Laila\u2019s instructions if you do find this bottle. "
+    - 'With kind regards, Hans 25-12-1918 '
+  _initialValue:
+    Parts:
+    - 'Dearest recipient,   On the day of writing this message, I received a message
+      in a bottle. I have left that message in the bottle, so you may read it as
+      well. It is written by a young girl by the name of Laila, whose grandma is
+      likely struggling with dementia, who wishes for her to get better. '
+    - 'I thought it was such a sweet message, and the craziest thing is that it actually
+      ended up right in front of my feet at a beach on Christmas day.  The tone of
+      the message really reminded me of my own daughter. She was just as sweet and
+      caring at that age, which made me so proud at the time. '
+    - "These days, we\u2019re not as close as we used to be, but I know she has been
+      having a really rough time, as she has recently lost her husband in the war.
+      I know it must be especially hard during this time of year. She and their kids
+      are missing him dearly."
+    - "I hope she can still find meaning and joy with her children during Christmas,
+      and I\u2019ve decided to add that as my wish on Laila\u2019s list. Please continue
+      to follow Laila\u2019s instructions if you do find this bottle. "
+    - 'With kind regards, Hans 25-12-1918 '
+  _preChangeTransformers: []
