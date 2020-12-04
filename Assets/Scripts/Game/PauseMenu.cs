@@ -22,7 +22,9 @@ public class PauseMenu : MonoBehaviour
 
     public void Quit() {
         Application.Quit();
+#if UNITY_EDITOR
         EditorApplication.isPlaying = false;
+#endif
     }
 
     public void Pause() {
