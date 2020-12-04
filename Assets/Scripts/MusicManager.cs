@@ -9,7 +9,7 @@ public class MusicManager : MonoBehaviour
     private EventInstance currentMusic;
 
     public void ClipToPlay(string clip) {
-        if (clip != default) {
+        if (clip != default && clip != "") {
             currentMusic = RuntimeManager.CreateInstance(clip);
             currentMusic.set3DAttributes(RuntimeUtils.To3DAttributes(transform));
             currentMusic.start();

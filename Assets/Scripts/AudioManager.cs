@@ -7,8 +7,16 @@ using FMODUnity;
 public class AudioManager : MonoBehaviour
 {
     public static void PlayOnMe(string clip, Transform target) {
-        EventInstance soundToPlay = RuntimeManager.CreateInstance(clip);
-        soundToPlay.set3DAttributes(RuntimeUtils.To3DAttributes(target));
-        soundToPlay.start();
+        if (clip == default)
+            return;
+
+        try {
+            EventInstance soundToPlay = RuntimeManager.CreateInstance(clip);
+            soundToPlay.set3DAttributes(RuntimeUtils.To3DAttributes(target));
+            soundToPlay.start();
+        }
+        catch (System.Exception) {
+            
+        }
     }
 }

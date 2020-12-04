@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LandSound: event:/Sound Design/BottleBeached
-  PushedSound: event:/Sound Design/BottleHit
+  PushedSound: 
   MoveSpeed: {fileID: 11400000, guid: 3499389546baf58499031de1e5e679da, type: 2}
   MaxSpeed: {fileID: 11400000, guid: a9017a6fd9d7d06439ddaa18e38c225e, type: 2}
 --- !u!114 &589791271
