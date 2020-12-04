@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {
     private void Awake() {
-        Time.timeScale = 0f;
+
     }
 
     public void QuitGame()
