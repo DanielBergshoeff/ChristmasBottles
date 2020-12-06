@@ -40,6 +40,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 32fbd5ccff32ca34f828aad02286c408, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Triplanar_79A04336_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 680c7dc2685e8b148879129a315180a9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Triplanar_C4736521_Texture_1:
         m_Texture: {fileID: 2800000, guid: 680c7dc2685e8b148879129a315180a9, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -56,10 +60,11 @@ Material:
     - Vector1_43996265: 1.64
     - Vector1_8333B4F8: 0
     - Vector1_B33865: 0.01
-    - Vector1_D0461338: 0.38
+    - Vector1_D0461338: 0.62
     - Vector1_EC5ADDDB: 50
     - Vector1_F4F3997C: 0.34
     m_Colors:
-    - Color_3305A333: {r: 0.876691, g: 0.90228343, b: 0.9339623, a: 0}
-    - Color_9669488E: {r: 0.0779192, g: 0.6585666, b: 0.9716981, a: 0}
+    - Color_3305A333: {r: 0.27450982, g: 0.29508993, b: 0.34901962, a: 0}
+    - Color_9669488E: {r: 0.0529103, g: 0.2696408, b: 0.38679248, a: 0}
     - Color_CCF7AD9E: {r: 0, g: 0, b: 0, a: 0}
+    - Vector3_E97E52CF: {r: 0, g: 0, b: 0, a: 0}

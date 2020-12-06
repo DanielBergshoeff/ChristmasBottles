@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MAT_Snow
+  m_Shader: {fileID: -6465566751694194690, guid: 73715b6f191ba764c8346760656e8f3c,
+    type: 3}
+  m_ShaderKeywords: MAIN_LIGHT_CALCULATE_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _SHADOWS_SOFT
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_2970FA74_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 6ed1213d0ff55d6448593745b962c3c8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_325C0079_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 680c7dc2685e8b148879129a315180a9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_8997A2A3_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 6ed1213d0ff55d6448593745b962c3c8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_C51E9543_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 680c7dc2685e8b148879129a315180a9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_79601EDF_Out_0:
+        m_Texture: {fileID: 2800000, guid: 32fbd5ccff32ca34f828aad02286c408, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_79A04336_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 680c7dc2685e8b148879129a315180a9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_C4736521_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 680c7dc2685e8b148879129a315180a9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_F5E16ABE_Texture_1:
+        m_Texture: {fileID: 2800000, guid: d6eb014234796344bacc714eddd0a0e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Boolean_501AEBC4: 1
+    - Boolean_675EEC83: 0
+    - Boolean_DD4FC547: 1
+    - Vector1_3D05D561: 3
+    - Vector1_3EC6C2DF: 0.62
+    - Vector1_43996265: 3.61
+    - Vector1_64E86DE3: 0.325
+    - Vector1_731D0BDE: 0.5
+    - Vector1_8333B4F8: 1.11
+    - Vector1_B33865: 0.09
+    - Vector1_D0461338: 0.47
+    - Vector1_DBB2E9F0: 3.95
+    - Vector1_EC5ADDDB: 50
+    - Vector1_F4F3997C: 0.34
+    m_Colors:
+    - Color_3305A333: {r: 1, g: 1, b: 1, a: 0}
+    - Color_9669488E: {r: 0.0779192, g: 0.6585666, b: 0.9716981, a: 0}
+    - Color_CCF7AD9E: {r: 0.15468137, g: 0.24957769, b: 0.41509432, a: 0}
+    - Vector3_E97E52CF: {r: 4.24, g: -0.43, b: 0.18, a: 0}
