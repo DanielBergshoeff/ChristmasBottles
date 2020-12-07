@@ -11,6 +11,7 @@ public class MusicManager : MonoBehaviour
     public void ClipToPlay(string clip) {
         try {
             if (clip != default && clip != "") {
+                currentMusic.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 currentMusic = RuntimeManager.CreateInstance(clip);
                 currentMusic.set3DAttributes(RuntimeUtils.To3DAttributes(transform));
                 currentMusic.start();

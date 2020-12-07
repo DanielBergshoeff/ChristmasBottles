@@ -106,11 +106,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ChristmasBottles/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637426748700328893
+  lastModified: 637429240632280004
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1648
+    Value: 1684
   Exists: 1
 --- !u!114 &-4543001216012497559
 MonoBehaviour:
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ChristmasBottles/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637426748700548317
+  lastModified: 637429240632950898
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -169,13 +169,13 @@ MonoBehaviour:
   guid: df7491449408f94683eee7ff9656948a
   Banks:
   - {fileID: -4543001216012497559}
-  IsStream: 0
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 79783
 --- !u!114 &-2226194618158907727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,12 +328,13 @@ MonoBehaviour:
   - {fileID: 2280895655691139823}
   - {fileID: -4786309143597432847}
   - {fileID: 6857140179284308429}
+  - {fileID: 7127335395197816971}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4543001216012497559}
   StringsBanks:
   - {fileID: -4636949036890532658}
-  stringsBankWriteTime: 637426748700328893
+  stringsBankWriteTime: 637429240632280004
   cacheVersion: 5
 --- !u!114 &211924874230211244
 MonoBehaviour:
@@ -374,13 +375,13 @@ MonoBehaviour:
   guid: 5077ea5b7278044ab5d7e064786b17c9
   Banks:
   - {fileID: -4543001216012497559}
-  IsStream: 0
+  IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 68869
 --- !u!114 &555293400763568382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,13 +421,13 @@ MonoBehaviour:
   guid: 6d80f6e706284b428bb388c2954a0f88
   Banks:
   - {fileID: -4543001216012497559}
-  IsStream: 0
+  IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 109655
 --- !u!114 &1168158021198327487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,13 +467,13 @@ MonoBehaviour:
   guid: 146016905700024a8bb7279e203facf8
   Banks:
   - {fileID: -4543001216012497559}
-  IsStream: 0
+  IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 88800
 --- !u!114 &2280895655691139823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,6 +566,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 72310
+--- !u!114 &7127335395197816971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Design/BottleTouch
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Design/BottleTouch
+  guid: f9947e97fc9e8140b6fc790656572eeb
+  Banks:
+  - {fileID: -4543001216012497559}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3648
 --- !u!114 &8672607537692655148
 MonoBehaviour:
   m_ObjectHideFlags: 0
