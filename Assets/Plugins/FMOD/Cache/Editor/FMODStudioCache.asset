@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ChristmasBottles/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637429461906793246
+  lastModified: 637429480258621599
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ChristmasBottles/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637429461907177286
+  lastModified: 637429480258960696
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -334,7 +334,7 @@ MonoBehaviour:
   - {fileID: -4543001216012497559}
   StringsBanks:
   - {fileID: -4636949036890532658}
-  stringsBankWriteTime: 637429461906793246
+  stringsBankWriteTime: 637429480258621599
   cacheVersion: 5
 --- !u!114 &211924874230211244
 MonoBehaviour:
