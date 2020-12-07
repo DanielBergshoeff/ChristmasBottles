@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{fe1471e8-85c4-4de5-b661-3334c271d46d}">
 		<property name="assetPath">
-			<value>Ripple2.wav</value>
+			<value>SD/Ripple2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

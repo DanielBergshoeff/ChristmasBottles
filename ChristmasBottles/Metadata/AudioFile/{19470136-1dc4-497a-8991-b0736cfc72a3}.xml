@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{19470136-1dc4-497a-8991-b0736cfc72a3}">
 		<property name="assetPath">
-			<value>BottleBreak.wav</value>
+			<value>SD/BottleBreak.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
