@@ -9621,6 +9621,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 49090d755deaf7c4c94f7238df993141,
         type: 2}
+    - target: {fileID: 974134831825059635, guid: f74ab300fe4f0ef4d9a88f36a65a2e30,
+        type: 3}
+      propertyPath: WishList
+      value: 
+      objectReference: {fileID: 11400000, guid: eb1d600a79e0af443a3898ef81965060,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74ab300fe4f0ef4d9a88f36a65a2e30, type: 3}
 --- !u!4 &978435565919123160

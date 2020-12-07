@@ -27,6 +27,12 @@ public class LetterSystem : MonoBehaviour
     private List<GameObject> spriteObjects;
     private int currentPart = 0;
 
+    private Queue<SpriteLetter> myLetters;
+
+    private void Awake() {
+        myLetters = new Queue<SpriteLetter>();
+    }
+
     private void Update() {
         if (currentLetter == null)
             return;
@@ -38,6 +44,11 @@ public class LetterSystem : MonoBehaviour
     }
 
     public void ShowLetter(SpriteLetter l) {
+        if (currentLetter != null) {
+            myLetters.Enqueue(l);
+            return;
+        }
+
         Letter.SetActive(true);
         currentPart = -1;
         currentLetter = l;
@@ -103,7 +114,17 @@ public class LetterSystem : MonoBehaviour
 
         AudioManager.PlayOnMe(LetterClose, transform);
 
-        NextLevelEvent.Raise();
+        if(!CheckForNewLetter())
+            NextLevelEvent.Raise();
+    }
+
+    public bool CheckForNewLetter() {
+        if (myLetters.Count == 0)
+            return false;
+
+        ShowLetter(myLetters.Dequeue());
+
+        return true;
     }
 }
 
