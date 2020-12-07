@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4537567122405849839}
   - component: {fileID: 4537567122405849832}
   - component: {fileID: 1667249335731266414}
+  - component: {fileID: 6368554518063693957}
   m_Layer: 0
   m_Name: Ripple
   m_TagString: Ripple
@@ -110,6 +111,29 @@ MonoBehaviour:
   AllRipples: {fileID: 11400000, guid: af376d07e8adf904d9b8ddf5e7b6432a, type: 2}
   totalSize: 1
   timeTillFull: 2
+--- !u!114 &6368554518063693957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4537567122405849833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Sound Design/WaterRipple
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6079023550779702846
 GameObject:
   m_ObjectHideFlags: 0
