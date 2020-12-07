@@ -43,5 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6fa5867c42c46f4c88729f43f2c79c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaterLayer:
+    serializedVersion: 2
+    m_Bits: 16
   RipplePrefab: {fileID: 4537567122405849833, guid: b45169cb17208e84d9c838dd6fc5d923,
     type: 3}

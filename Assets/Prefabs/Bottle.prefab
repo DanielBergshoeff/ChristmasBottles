@@ -253,6 +253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d503b46b5b1cee349b56b58a6491bfda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LandSound: event:/Sound Design/BottleBeached
+  PushedSound: 
   MoveSpeed: {fileID: 11400000, guid: 3499389546baf58499031de1e5e679da, type: 2}
   MaxSpeed: {fileID: 11400000, guid: a9017a6fd9d7d06439ddaa18e38c225e, type: 2}
 --- !u!114 &589791271
@@ -337,6 +339,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7908d56fadd6b9f40818551413aebd86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CrackSound: event:/Sound Design/BottleHit
+  BreakSound: event:/Sound Design/BottleBreak
   RestartGameEvent: {fileID: 11400000, guid: 053dde0b6b1498c45971d07f570e94ca, type: 2}
   BreakTag: {fileID: 11400000, guid: cf23239569ef11645be56128cc2d8bdb, type: 2}
   Phases: 3

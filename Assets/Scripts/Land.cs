@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class Land : MonoBehaviour
 {
-    public LetterEvent DisplayLetterEvent;
-    public LetterVariable MyLetter;
+    public SpriteLetterEvent DisplayLetterEvent;
+    public SpriteLetterVariable MyLetter;
+    public SpriteLetterVariable WishList;
 
     private bool triggered = false;
 
@@ -15,6 +16,8 @@ public class Land : MonoBehaviour
             return;
 
         DisplayLetterEvent.Raise(MyLetter.Value);
+        if(WishList != null)
+            DisplayLetterEvent.Raise(WishList.Value);
         triggered = true;
     }
 }
