@@ -43,8 +43,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdb8856b4140a524cb49d51d84450551, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextSpeed:
+    _usage: 1
+    _value: 0
+    _constant: {fileID: 11400000, guid: 8808dd87d94ae004c8be7a6f06a49400, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  StayTime:
+    _usage: 1
+    _value: 0
+    _constant: {fileID: 11400000, guid: 4dc913b90443d5d4dac1397b536ab9fa, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
   SwitchMusic: {fileID: 11400000, guid: 46b2712924911e545ab8ed421c0bc515, type: 2}
   IntroMusic: 
+  PostIntroMusic: 
   FadeInEvent: {fileID: 11400000, guid: c19392b5d0c4c2140a23d928ffbfb674, type: 2}
   DialogueEvent: {fileID: 11400000, guid: 5ce0f52a9383ed046981c629dabd48e4, type: 2}
   InstantFadeEvent: {fileID: 11400000, guid: 695f9a8677dacea4b930009198c05449, type: 2}

@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Introduction : MonoBehaviour
 {
+    public FloatReference TextSpeed;
+    public FloatReference StayTime;
+
     public StringEvent SwitchMusic;
     [FMODUnity.EventRef]
     public string IntroMusic;
@@ -45,7 +48,7 @@ public class Introduction : MonoBehaviour
         currentIntroPart++;
         if (currentIntroPart < IntroductionText.Parts.Count) {
             DialogueEvent.Raise(IntroductionText.Parts[currentIntroPart]);
-            Invoke("NextIntroPart", TimePerPart);
+            Invoke("NextIntroPart", TimePerPart + IntroductionText.Parts[currentIntroPart].Length / TextSpeed.Value + StayTime.Value);
         }
         else {
             EndIntro();
