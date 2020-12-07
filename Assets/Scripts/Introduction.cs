@@ -8,6 +8,10 @@ public class Introduction : MonoBehaviour
     public StringEvent SwitchMusic;
     [FMODUnity.EventRef]
     public string IntroMusic;
+
+    [FMODUnity.EventRef]
+    public string PostIntroMusic;
+
     public FloatEvent FadeInEvent;
     public StringEvent DialogueEvent;
     public VoidEvent InstantFadeEvent;
@@ -50,5 +54,6 @@ public class Introduction : MonoBehaviour
 
     private void EndIntro() {
         FadeInEvent.Raise(FadeInTime);
+        SwitchMusic.Raise(PostIntroMusic);
     }
 }
