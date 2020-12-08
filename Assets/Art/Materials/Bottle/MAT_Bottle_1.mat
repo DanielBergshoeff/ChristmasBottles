@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MAT_Bottle_1
+  m_Shader: {fileID: -6465566751694194690, guid: dc76d24caeed29747bea5d537bb32367,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_2C99EC8A_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 8aa6de8e260b4cc45b68c8a7097ceb85, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_8997A2A3_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 6ed1213d0ff55d6448593745b962c3c8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_E3A9CE45_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 3216dcfe1e1cad242a620049b94b34ea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_C4736521_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 680c7dc2685e8b148879129a315180a9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_F5E16ABE_Texture_1:
+        m_Texture: {fileID: 2800000, guid: d6eb014234796344bacc714eddd0a0e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Boolean_501AEBC4: 0
+    - Boolean_675EEC83: 0
+    - Boolean_D1D1940F: 1
+    - Boolean_DD4FC547: 0
+    - Vector1_3D05D561: 1
+    - Vector1_43996265: 0
+    - Vector1_672E150A: 0.21
+    - Vector1_8333B4F8: 1.11
+    - Vector1_B33865: 0
+    - Vector1_CA745ED5: 0.169
+    - Vector1_D0461338: 0.55
+    - Vector1_EC5ADDDB: 50
+    - Vector1_F4F3997C: 0
+    m_Colors:
+    - Color_3305A333: {r: 0.6415094, g: 0.38103202, b: 0.3177287, a: 0}
+    - Color_9669488E: {r: 0.16745284, g: 0.2494178, b: 0.5, a: 0}
+    - Color_CCF7AD9E: {r: 0, g: 0, b: 0, a: 0}

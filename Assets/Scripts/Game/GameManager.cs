@@ -7,72 +7,22 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public FloatEvent FadeInEvent;
+    public FloatEvent FadeOutEvent;
+
     public VoidEvent RestartGameEvent;
     public VoidEvent NextLevelEvent;
-    public Image FadePanel;
-    public float FadeTime = 3f;
-
-    [Header("Introduction")]
-    public Letter IntroductionText;
-    public float IntroTimePerPart = 5f;
-
-    private Color fadeColor;
-    private float currentFade;
-
-    private float startFadeTime = 0f;
-    private bool fadeIn = false;
-    private bool fadeOut = false;
-
-    private void Awake() {
-        fadeColor = FadePanel.color;
-    }
+    public float FadeOutTime = 3f;
+    
 
     private void Start() {
         RestartGameEvent.Register(StartRestartGame);
         NextLevelEvent.Register(StartNextLevel);
-
-
-        FadeIn();
-    }
-
-    private void Update() {
-        if (fadeIn || fadeOut) {
-            float t = 0f;
-            if (fadeIn)
-                t = 1f - (Time.time - startFadeTime) / FadeTime;
-            else
-                t = (Time.time - startFadeTime) / FadeTime;
-
-            if (t > 1f || t < 0f) {
-                if (t < 0f)
-                    FadePanel.enabled = false;
-                fadeIn = false;
-                fadeOut = false;
-            }
-            else {
-                fadeColor.a = t;
-                FadePanel.color = fadeColor;
-            }
-        }
-    }
-
-    private void FadeIn() {
-        Debug.Log("Fading in");
-        fadeIn = true;
-        startFadeTime = Time.time;
-        FadePanel.enabled = true;
-    }
-
-    private void FadeOut() {
-        Debug.Log("Fading out");
-        fadeOut = true;
-        startFadeTime = Time.time;
-        FadePanel.enabled = true;
     }
 
     public void StartRestartGame() {
-        FadeOut();
-        Invoke("RestartGame", FadeTime);
+        FadeOutEvent.Raise(FadeOutTime);
+        Invoke("RestartGame", FadeOutTime);
     }
 
     private void RestartGame() {
@@ -80,8 +30,8 @@ public class GameManager : MonoBehaviour
     }
 
     public void StartNextLevel() {
-        FadeOut();
-        Invoke("NextLevel", FadeTime);
+        FadeOutEvent.Raise(FadeOutTime);
+        Invoke("NextLevel", FadeOutTime);
     }
 
     private void NextLevel() {

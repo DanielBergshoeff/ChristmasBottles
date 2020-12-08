@@ -1,10 +1,18 @@
-﻿using System.Collections;
+﻿using FMOD.Studio;
+using FMODUnity;
+using System.Collections;
 using System.Collections.Generic;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
 public class Breakable : MonoBehaviour
 {
+    [FMODUnity.EventRef]
+    public string CrackSound;
+
+    [FMODUnity.EventRef]
+    public string BreakSound;
+
     public VoidEvent RestartGameEvent;
     public StringVariable BreakTag;
     public int Phases = 3;
@@ -44,6 +52,14 @@ public class Breakable : MonoBehaviour
         if(CurrentPhase.Value >= Phases) {
             broken = true;
             Invoke("Break", 3f);
+            EventInstance breakSound = RuntimeManager.CreateInstance(BreakSound);
+            breakSound.set3DAttributes(RuntimeUtils.To3DAttributes(transform));
+            breakSound.start();
+        }
+        else {
+            EventInstance crackSound = RuntimeManager.CreateInstance(CrackSound);
+            crackSound.set3DAttributes(RuntimeUtils.To3DAttributes(transform));
+            crackSound.start();
         }
     }
 

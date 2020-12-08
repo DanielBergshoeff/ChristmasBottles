@@ -1,32 +1,35 @@
 {
   "scopedRegistries": [
     {
-        "name": "NPM Registry",
-        "url": "https://registry.npmjs.org",
-        "scopes": [
-            "com.mambojambostudios.unity-atoms-core",
-            "com.mambojambostudios.unity-atoms-base-atoms",
-            "com.mambojambostudios.unity-atoms-fsm",
-            "com.mambojambostudios.unity-atoms-mobile",
-            "com.mambojambostudios.unity-atoms-mono-hooks",
-            "com.mambojambostudios.unity-atoms-tags",
-            "com.mambojambostudios.unity-atoms-scene-mgmt",
-            "com.mambojambostudios.unity-atoms-ui"
-        ]
+      "name": "NPM Registry",
+      "url": "https://registry.npmjs.org",
+      "scopes": [
+        "com.mambojambostudios.unity-atoms-core",
+        "com.mambojambostudios.unity-atoms-base-atoms",
+        "com.mambojambostudios.unity-atoms-fsm",
+        "com.mambojambostudios.unity-atoms-mobile",
+        "com.mambojambostudios.unity-atoms-mono-hooks",
+        "com.mambojambostudios.unity-atoms-tags",
+        "com.mambojambostudios.unity-atoms-scene-mgmt",
+        "com.mambojambostudios.unity-atoms-ui"
+      ]
     }
-],
+  ],
   "dependencies": {
-    "com.mambojambostudios.unity-atoms-core": "4.3.0",
     "com.mambojambostudios.unity-atoms-base-atoms": "4.3.0",
+    "com.mambojambostudios.unity-atoms-core": "4.3.0",
     "com.mambojambostudios.unity-atoms-fsm": "4.3.0",
     "com.mambojambostudios.unity-atoms-mobile": "4.3.0",
     "com.mambojambostudios.unity-atoms-mono-hooks": "4.3.0",
-    "com.mambojambostudios.unity-atoms-tags": "4.3.0",
     "com.mambojambostudios.unity-atoms-scene-mgmt": "4.3.0",
+    "com.mambojambostudios.unity-atoms-tags": "4.3.0",
     "com.mambojambostudios.unity-atoms-ui": "4.3.0",
+    "com.unity.2d.sprite": "1.0.0",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ide.rider": "1.1.4",
     "com.unity.ide.vscode": "1.1.4",
+    "com.unity.polybrush": "1.0.2",
+    "com.unity.probuilder": "4.2.3",
     "com.unity.render-pipelines.universal": "7.1.8",
     "com.unity.test-framework": "1.1.9",
     "com.unity.textmeshpro": "2.0.1",

@@ -106,5 +106,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a32c667133280b14aa822ce03d6dff36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisplayLetterEvent: {fileID: 11400000, guid: c7740332dee2147468e1242dd7090d35, type: 2}
+  DisplayLetterEvent: {fileID: 11400000, guid: bf0b4cbbc8dd7ca4a8001bda2fbc8b7f, type: 2}
   MyLetter: {fileID: 11400000, guid: f48bd4e5a0e7f3249a08551c425d2888, type: 2}
