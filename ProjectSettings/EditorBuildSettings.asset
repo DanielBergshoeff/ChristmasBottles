@@ -8,7 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: 662976fa6a6b6ff499fc41e5ac29f0e9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DevScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 0
+    path: Assets/Scenes/DevScene2.unity
+    guid: d73af4c2d5e061e4a8904f31925733fa
+  - enabled: 0
+    path: Assets/Scenes/DevScene3.unity
+    guid: 979cb37f58cf91746b22284ea7489ba4
+  - enabled: 1
+    path: Assets/Scenes/Lizzy1.unity
+    guid: 14f2a8c4712654740be91b2ef44fe1fc
+  - enabled: 1
+    path: Assets/Scenes/Lizzy2.unity
+    guid: a8a01d42a1295764db5f6d19bc35d67e
+  - enabled: 1
+    path: Assets/Scenes/Lizzy3.unity
+    guid: b2fbbb5b25f246044b681deaa39d8819
   m_configObjects: {}

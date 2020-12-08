@@ -911,10 +911,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aeb94f8321759242ae704ee82bd583b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuPanel: {fileID: 0}
-  MainCamera: {fileID: 0}
-  MainMenuEvent: {fileID: 0}
-  PlayGameEvent: {fileID: 0}
-  lerpDuration: 3
-  zoomingAmount: 0
-  moveAmount: 0
+  InterfaceSound: event:/Sound Design/Interface

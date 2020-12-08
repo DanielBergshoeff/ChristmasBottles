@@ -1,5 +1,85 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &338443917608349377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6686562178868300501}
+  - component: {fileID: 5271602885413247361}
+  - component: {fileID: 5325410898773845677}
+  m_Layer: 0
+  m_Name: MOD_Bottle
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6686562178868300501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338443917608349377}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0, y: -0.000000007450581, z: 1.7763568e-15}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children: []
+  m_Father: {fileID: 5588493028934695712}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5271602885413247361
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338443917608349377}
+  m_Mesh: {fileID: -6238386953525648819, guid: f6cc1f0225742614d9d816d7d7a1e150, type: 3}
+--- !u!23 &5325410898773845677
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338443917608349377}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9321d692185a4114e97876dc4f41e2ac, type: 2}
+  - {fileID: 2100000, guid: e7ea2bf5e007aba46b4734d24e0a99c6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &6547865942844440126
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,11 +94,11 @@ GameObject:
   - component: {fileID: 6547865942844440112}
   m_Layer: 0
   m_Name: Cylinder (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6547865942844440113
 Transform:
   m_ObjectHideFlags: 0
@@ -31,7 +111,7 @@ Transform:
   m_LocalScale: {x: 0.03160731, y: 0.042831067, z: 0.03160731}
   m_Children: []
   m_Father: {fileID: 6547865943097270879}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6547865942844440114
 MeshFilter:
@@ -108,11 +188,11 @@ GameObject:
   - component: {fileID: 6547865943091978491}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6547865943091978488
 Transform:
   m_ObjectHideFlags: 0
@@ -202,6 +282,8 @@ GameObject:
   - component: {fileID: 589791271}
   - component: {fileID: 7630966122503674883}
   - component: {fileID: 1313806615}
+  - component: {fileID: 7502472179439599436}
+  - component: {fileID: 4357808387105947645}
   m_Layer: 0
   m_Name: Bottle
   m_TagString: Player
@@ -221,6 +303,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6547865943091978488}
+  - {fileID: 5588493028934695712}
   - {fileID: 6547865942844440113}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -253,6 +336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d503b46b5b1cee349b56b58a6491bfda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LandSound: event:/Sound Design/BottleBeached
+  PushedSound: 
   MoveSpeed: {fileID: 11400000, guid: 3499389546baf58499031de1e5e679da, type: 2}
   MaxSpeed: {fileID: 11400000, guid: a9017a6fd9d7d06439ddaa18e38c225e, type: 2}
 --- !u!114 &589791271
@@ -337,8 +422,108 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7908d56fadd6b9f40818551413aebd86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CrackSound: event:/Sound Design/BottleHit
+  BreakSound: event:/Sound Design/BottleBreak
   RestartGameEvent: {fileID: 11400000, guid: 053dde0b6b1498c45971d07f570e94ca, type: 2}
   BreakTag: {fileID: 11400000, guid: cf23239569ef11645be56128cc2d8bdb, type: 2}
   Phases: 3
   VelocityForCrack: {fileID: 11400000, guid: 95d3ef44e48aa1045b37f8d4c9b22d7c, type: 2}
   CurrentPhase: {fileID: 11400000, guid: 3d5c94c606bc57f4da02141ad4e899d1, type: 2}
+--- !u!114 &7502472179439599436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6547865943097270876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050ff37b5550f4b7e9bdf8b985aff484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4357808387105947645}
+        m_MethodName: OnBreakChange
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: bf0f4486d8b25bf42acbee712f30e685, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+--- !u!114 &4357808387105947645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6547865943097270876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adfd056c921892d4a8b49337a5e6a2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyRenderer: {fileID: 5325410898773845677}
+  MatPerPhase:
+  - {fileID: 2100000, guid: 9321d692185a4114e97876dc4f41e2ac, type: 2}
+  - {fileID: 2100000, guid: 2a20391c890553d4ea07fbcc9e24af29, type: 2}
+  - {fileID: 2100000, guid: 98b0738f2afaaf748a19f3a719b33d5d, type: 2}
+--- !u!1 &8923048218559826227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5588493028934695712}
+  - component: {fileID: 8161945421411924208}
+  m_Layer: 0
+  m_Name: MOD_MessageAndBottle
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5588493028934695712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923048218559826227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.000000043257, y: 0.102, z: 0}
+  m_LocalScale: {x: 0.91586, y: 0.91586, z: 0.91586}
+  m_Children:
+  - {fileID: 6686562178868300501}
+  m_Father: {fileID: 6547865943097270879}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &8161945421411924208
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8923048218559826227}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.057668444
+  m_Height: 0.3539609
+  m_Direction: 1
+  m_Center: {x: 0.0010292769, y: 0.047356654, z: -0.002142109}

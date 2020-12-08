@@ -6,6 +6,12 @@ using UnityEngine;
 
 public class Bottle : MonoBehaviour
 {
+    [FMODUnity.EventRef]
+    public string LandSound;
+
+    [FMODUnity.EventRef]
+    public string PushedSound;
+
     public FloatVariable MoveSpeed;
     public FloatVariable MaxSpeed;
 
@@ -42,12 +48,21 @@ public class Bottle : MonoBehaviour
         }
     }
 
+
+    private void OnCollisionEnter(Collision collision) {
+        if (collision.collider.CompareTag("Land")) {
+            AudioManager.PlayOnMe(LandSound, transform);
+        }
+    }
+
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Ripple")) {
-            Ripple r = other.GetComponent<Ripple>();
+            Ripple r = other.GetComponentInParent<Ripple>();
             if (!myRipples.Contains(r)) {
                 myRipples.Add(r);
             }
+
+            AudioManager.PlayOnMe(PushedSound, transform);
         }
         else if (other.CompareTag("Current")) {
             Current c = other.GetComponent<Current>();
@@ -59,7 +74,7 @@ public class Bottle : MonoBehaviour
 
     private void OnTriggerExit(Collider other) {
         if (other.CompareTag("Ripple")) {
-            Ripple r = other.GetComponent<Ripple>();
+            Ripple r = other.GetComponentInParent<Ripple>();
             if (myRipples.Contains(r)) {
                 myRipples.Remove(r);
             }

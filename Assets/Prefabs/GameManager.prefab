@@ -43,4 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60832f7ddfc6de4585ce042e3d38255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FadeInEvent: {fileID: 11400000, guid: c19392b5d0c4c2140a23d928ffbfb674, type: 2}
+  FadeOutEvent: {fileID: 11400000, guid: 8e8b3cf49006d744a99d8eaad608b1eb, type: 2}
   RestartGameEvent: {fileID: 11400000, guid: 053dde0b6b1498c45971d07f570e94ca, type: 2}
+  NextLevelEvent: {fileID: 11400000, guid: 5d3ec6760c805ba4f9902b5de69e431b, type: 2}
+  FadeOutTime: 3
