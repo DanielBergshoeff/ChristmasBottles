@@ -13,12 +13,18 @@ public class Ripple : MonoBehaviour
 
     private float startTime = 0f;
     private bool growing = false;
+    private Transform colliderTransform;
+    private MeshRenderer myMeshRenderer;
 
     private void Awake() {
         DestroyEvent = new RippleEvent();
         startTime = Time.time;
         growing = true;
         AllRipples.Add(this);
+        colliderTransform = GetComponentInChildren<Collider>().transform;
+        myMeshRenderer = GetComponentInChildren<MeshRenderer>();
+        myMeshRenderer.material = Instantiate(myMeshRenderer.material);
+        myMeshRenderer.material.SetFloat("_RipplePos", 0f);
     }
 
     private void Update() {
@@ -27,14 +33,15 @@ public class Ripple : MonoBehaviour
 
         float t = Time.time - startTime;
         if (t > timeTillFull) {
-            transform.localScale = new Vector3(totalSize, totalSize, totalSize);
+            colliderTransform.localScale = new Vector3(totalSize, totalSize, totalSize);
             growing = false;
             DestroyEvent.Invoke(this);
             Destroy(gameObject);
         }
         else {
             t = t / timeTillFull;
-            transform.localScale = new Vector3(t * totalSize, t * totalSize, t * totalSize);
+            colliderTransform.localScale = new Vector3(t * totalSize, t * totalSize, t * totalSize);
+            myMeshRenderer.material.SetFloat("_RipplePos", t * 2f);
         }
     }
 

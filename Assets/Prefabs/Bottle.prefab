@@ -282,6 +282,8 @@ GameObject:
   - component: {fileID: 589791271}
   - component: {fileID: 7630966122503674883}
   - component: {fileID: 1313806615}
+  - component: {fileID: 7502472179439599436}
+  - component: {fileID: 4357808387105947645}
   m_Layer: 0
   m_Name: Bottle
   m_TagString: Player
@@ -427,6 +429,58 @@ MonoBehaviour:
   Phases: 3
   VelocityForCrack: {fileID: 11400000, guid: 95d3ef44e48aa1045b37f8d4c9b22d7c, type: 2}
   CurrentPhase: {fileID: 11400000, guid: 3d5c94c606bc57f4da02141ad4e899d1, type: 2}
+--- !u!114 &7502472179439599436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6547865943097270876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050ff37b5550f4b7e9bdf8b985aff484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4357808387105947645}
+        m_MethodName: OnBreakChange
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: bf0f4486d8b25bf42acbee712f30e685, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+--- !u!114 &4357808387105947645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6547865943097270876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adfd056c921892d4a8b49337a5e6a2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyRenderer: {fileID: 5325410898773845677}
+  MatPerPhase:
+  - {fileID: 2100000, guid: 9321d692185a4114e97876dc4f41e2ac, type: 2}
+  - {fileID: 2100000, guid: 2a20391c890553d4ea07fbcc9e24af29, type: 2}
+  - {fileID: 2100000, guid: 98b0738f2afaaf748a19f3a719b33d5d, type: 2}
 --- !u!1 &8923048218559826227
 GameObject:
   m_ObjectHideFlags: 0
