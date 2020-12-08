@@ -340,6 +340,8 @@ MonoBehaviour:
   PushedSound: 
   MoveSpeed: {fileID: 11400000, guid: 3499389546baf58499031de1e5e679da, type: 2}
   MaxSpeed: {fileID: 11400000, guid: a9017a6fd9d7d06439ddaa18e38c225e, type: 2}
+  BottleModel: {fileID: 5588493028934695712}
+  MaxRotation: {fileID: 11400000, guid: 25195625b6fb69b44b3307cb3cd14ac7, type: 2}
 --- !u!114 &589791271
 MonoBehaviour:
   m_ObjectHideFlags: 0
