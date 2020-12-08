@@ -57,7 +57,7 @@ public class Bottle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Ripple")) {
-            Ripple r = other.GetComponent<Ripple>();
+            Ripple r = other.GetComponentInParent<Ripple>();
             if (!myRipples.Contains(r)) {
                 myRipples.Add(r);
             }
@@ -74,7 +74,7 @@ public class Bottle : MonoBehaviour
 
     private void OnTriggerExit(Collider other) {
         if (other.CompareTag("Ripple")) {
-            Ripple r = other.GetComponent<Ripple>();
+            Ripple r = other.GetComponentInParent<Ripple>();
             if (myRipples.Contains(r)) {
                 myRipples.Remove(r);
             }
