@@ -4,17 +4,10 @@ using UnityEngine;
 
 public class BottleBreakVisuals : MonoBehaviour
 {
+    public Renderer MyRenderer;
     public List<Material> MatPerPhase;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void OnBreakChange(int phase) {
+        MyRenderer.material = MatPerPhase[Mathf.Clamp(phase, 0, MatPerPhase.Count - 1)];
     }
 }
