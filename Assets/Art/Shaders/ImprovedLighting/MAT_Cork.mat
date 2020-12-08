@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MAT_LightCalculation 2
+  m_Name: MAT_Cork
   m_Shader: {fileID: -6465566751694194690, guid: 73715b6f191ba764c8346760656e8f3c,
     type: 3}
   m_ShaderKeywords: MAIN_LIGHT_CALCULATE_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _SHADOWS_SOFT
@@ -57,10 +57,14 @@ Material:
     - Boolean_675EEC83: 0
     - Boolean_DD4FC547: 1
     - Vector1_3D05D561: 3
+    - Vector1_3EC6C2DF: 0
     - Vector1_43996265: 1.64
+    - Vector1_64E86DE3: 1
+    - Vector1_731D0BDE: 1
     - Vector1_8333B4F8: 0
     - Vector1_B33865: 0.01
     - Vector1_D0461338: 0.25
+    - Vector1_DBB2E9F0: 0.3
     - Vector1_EC5ADDDB: 50
     - Vector1_F4F3997C: 0.34
     m_Colors:
