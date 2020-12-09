@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityAtoms;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class Bottle : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class Bottle : MonoBehaviour
     public string LandSound;
 
     [FMODUnity.EventRef]
-    public string PushedSound;
+    public string WaterCurrentSound;
 
     public FloatVariable MoveSpeed;
     public FloatVariable MaxSpeed;
@@ -21,6 +23,8 @@ public class Bottle : MonoBehaviour
     private Rigidbody myRigidbody;
     private List<Ripple> myRipples;
     private List<Current> myCurrents;
+
+    private EventInstance waterCurrentSound;
 
     private void Awake() {
         myRigidbody = GetComponent<Rigidbody>();
@@ -66,13 +70,16 @@ public class Bottle : MonoBehaviour
             if (!myRipples.Contains(r)) {
                 myRipples.Add(r);
             }
-
-            AudioManager.PlayOnMe(PushedSound, transform);
         }
         else if (other.CompareTag("Current")) {
             Current c = other.GetComponent<Current>();
             if (!myCurrents.Contains(c)) {
                 myCurrents.Add(c);
+                if (myCurrents.Count == 1) {
+                    waterCurrentSound = RuntimeManager.CreateInstance(WaterCurrentSound);
+                    waterCurrentSound.set3DAttributes(RuntimeUtils.To3DAttributes(myCurrents[0].transform));
+                    waterCurrentSound.start();
+                }
             }
         }
     }
@@ -88,6 +95,9 @@ public class Bottle : MonoBehaviour
             Current c = other.GetComponent<Current>();
             if (myCurrents.Contains(c)) {
                 myCurrents.Remove(c);
+                if(myCurrents.Count == 0) {
+                    waterCurrentSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                }
             }
         }
     }

@@ -35,6 +35,9 @@ public class Introduction : MonoBehaviour
         SwitchMusic.Raise(IntroMusic);
         currentIntroPart = -1;
         timer = StartWaitTime;
+        if(StartWaitTime == 0f) {
+            NextIntroPart();
+        }
     }
 
     private void Update() {
