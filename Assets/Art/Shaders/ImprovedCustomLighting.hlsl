@@ -52,7 +52,7 @@ void CalculateAdditionalLights_float(float Smoothness, float3 WorldPos, float3 W
 		}
 #endif
 
-	half total = Diffuse + Specular;
-    Color = total <= 0 ? MainColor : Color / total;
+	//half total = Diffuse + Specular;
+   // Color = total <= 0 ? MainColor : Color / total;
 }
 
