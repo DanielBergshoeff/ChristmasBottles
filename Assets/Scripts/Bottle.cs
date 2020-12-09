@@ -50,15 +50,6 @@ public class Bottle : MonoBehaviour
             myRigidbody.velocity = v.normalized * MaxSpeed.Value;
         }
 
-
-        /*Debug.Log(BottleModel.rotation.eulerAngles.x - v.x);
-        Debug.Log(BottleModel.rotation.eulerAngles.z - v.z);
-        v.x = v.x > 0 ? 1f : -1f;
-        v.z = v.z > 0 ? 1f : -1f;
-        float x = (BottleModel.rotation.eulerAngles.z - v.x > MaxRotation.Value && BottleModel.rotation.eulerAngles.z - v.x < 360f - MaxRotation.Value) ? 0f : v.x;
-        float z = (BottleModel.rotation.eulerAngles.x - v.z > MaxRotation.Value && BottleModel.rotation.eulerAngles.x - v.z < 360f - MaxRotation.Value) ? 0f : v.z;
-        BottleModel.Rotate(-z, 0f, -x);*/
-
         BottleModel.rotation = Quaternion.Euler(Mathf.Clamp(v.z, v.z > 0f ? 0f : -1f, v.z > 0f ? 1f : 0f) * MaxRotation.Value, 0f, Mathf.Clamp(v.x, v.x > 0f ? 0f : -1f, v.x > 0f ? 1f : 0f) * MaxRotation.Value);
     }
 

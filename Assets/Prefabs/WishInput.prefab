@@ -182,7 +182,7 @@ RectTransform:
   m_GameObject: {fileID: 7704951482807174588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.5724, y: 5.5724, z: 5.5724}
+  m_LocalScale: {x: 4.230956, y: 4.230956, z: 4.230956}
   m_Children: []
   m_Father: {fileID: 7704951484244231153}
   m_RootOrder: 1
@@ -655,7 +655,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7704951483211388642}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: SendMessage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7704951483298196799
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,7 +915,7 @@ RectTransform:
   m_GameObject: {fileID: 7704951484050804398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.5724, y: 5.5724, z: 5.5724}
+  m_LocalScale: {x: 4.230956, y: 4.230956, z: 4.230956}
   m_Children: []
   m_Father: {fileID: 7704951484244231153}
   m_RootOrder: 0
@@ -968,7 +979,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7704951484244231153
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1026,7 +1037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1080,7 +1091,7 @@ RectTransform:
   m_GameObject: {fileID: 7704951484484174146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.5724, y: 5.5724, z: 5.5724}
+  m_LocalScale: {x: 4.230956, y: 4.230956, z: 4.230956}
   m_Children: []
   m_Father: {fileID: 7704951484244231153}
   m_RootOrder: 2

@@ -25,22 +25,30 @@ public class Introduction : MonoBehaviour
     public float StartWaitTime = 3f;
 
     private int currentIntroPart = 0;
+    private float timer = 0f;
+    private int timesPressed = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         InstantFadeEvent.Raise();
-        Invoke("StartIntro", StartWaitTime);
         SwitchMusic.Raise(IntroMusic);
+        currentIntroPart = -1;
+        timer = StartWaitTime;
     }
 
-    private void StartIntro() {
-        if (IntroductionText != null) {
-            currentIntroPart = -1;
-            NextIntroPart();
-        }
-        else {
-            EndIntro();
+    private void Update() {
+        if(timer > 0f) {
+            if (Input.GetMouseButtonDown(0)) {
+                timesPressed++;
+                if(timesPressed > 1) {
+                    timer = -1f;
+                }
+            }
+            timer -= Time.deltaTime;
+            if(timer <= 0f) {
+                NextIntroPart();
+            }
         }
     }
 
@@ -48,7 +56,8 @@ public class Introduction : MonoBehaviour
         currentIntroPart++;
         if (currentIntroPart < IntroductionText.Parts.Count) {
             DialogueEvent.Raise(IntroductionText.Parts[currentIntroPart]);
-            Invoke("NextIntroPart", TimePerPart + IntroductionText.Parts[currentIntroPart].Length / TextSpeed.Value + StayTime.Value);
+            timer = TimePerPart + IntroductionText.Parts[currentIntroPart].Length / TextSpeed.Value + StayTime.Value;
+            timesPressed = 0;
         }
         else {
             EndIntro();
