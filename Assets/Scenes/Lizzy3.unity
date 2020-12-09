@@ -22776,7 +22776,7 @@ PrefabInstance:
     - target: {fileID: 8345837636264437751, guid: 3f2814bb0a40a0240948e3e95bcd0659,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8345837636264437755, guid: 3f2814bb0a40a0240948e3e95bcd0659,
         type: 3}
@@ -33495,7 +33495,7 @@ PrefabInstance:
     - target: {fileID: 660944679025052223, guid: 04b057322296bb84097341a7ef536cf0,
         type: 3}
       propertyPath: m_Drag
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6547865942844440113, guid: 04b057322296bb84097341a7ef536cf0,
         type: 3}
