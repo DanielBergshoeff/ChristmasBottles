@@ -77,13 +77,6 @@ public class LetterSystem : MonoBehaviour
     }
 
     private void UpdateButtons() {
-        /*if (currentPart == 0) {
-            PreviousButton.SetActive(false);
-        }
-        else {
-            PreviousButton.SetActive(true);
-        }*/
-
         if (currentPart == currentLetter.Parts.Count - 1) {
             NextButton.SetActive(false);
             CloseLetterButton.SetActive(true);

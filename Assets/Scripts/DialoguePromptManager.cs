@@ -26,17 +26,26 @@ public class DialoguePromptManager : MonoBehaviour
         if (currentDialogue == "")
             return;
 
+        if (Input.GetMouseButtonDown(0)) {
+            if (dialogueTimer < 1f)
+                dialogueTimer = 1f;
+        }
+
         dialogueTimer += (Time.deltaTime / currentDialogue.Length) * TextSpeed;
         int l = (int)Mathf.Clamp(currentDialogue.Length * dialogueTimer, 1f, currentDialogue.Length);
         dialogueText.text = currentDialogue.Substring(0, l);
         if(currentDialogue.Length * dialogueTimer >= currentDialogue.Length + StayTime * TextSpeed) {
-            currentDialogue = "";
-            dialogueText.text = "";
+            EndDialogue();
         }
     }
 
     public void StartDialogue(string d) {
         dialogueTimer = 0f;
         currentDialogue = d;
+    }
+
+    public void EndDialogue() {
+        currentDialogue = "";
+        dialogueText.text = "";
     }
 }
