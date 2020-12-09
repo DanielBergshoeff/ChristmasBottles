@@ -1231,7 +1231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LetterOpen: event:/Sound Design/LetterOpen
-  LetterClose: event:/Sound Design/BottleClose
+  LetterClose: event:/Sound Design/LetterClose
   LetterPartPrefab: {fileID: 8798502774057307832}
   NextLevelEvent: {fileID: 11400000, guid: 5d3ec6760c805ba4f9902b5de69e431b, type: 2}
   Letter: {fileID: 1688396022273611098}

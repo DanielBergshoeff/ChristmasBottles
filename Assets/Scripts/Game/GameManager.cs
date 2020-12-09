@@ -30,15 +30,15 @@ public class GameManager : MonoBehaviour
     }
 
     public void StartNextLevel() {
-        FadeOutEvent.Raise(FadeOutTime);
-        Invoke("NextLevel", FadeOutTime);
+
+        if (SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings) {
+            FadeOutEvent.Raise(FadeOutTime);
+            Invoke("NextLevel", FadeOutTime);
+        }
     }
 
     private void NextLevel() {
-        if (SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        else
-            SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private void OnDestroy() {
