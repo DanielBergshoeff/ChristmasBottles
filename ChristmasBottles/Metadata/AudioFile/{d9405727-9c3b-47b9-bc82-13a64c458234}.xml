@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{d9405727-9c3b-47b9-bc82-13a64c458234}">
+		<property name="assetPath">
+			<value>SD/Bells/Bell4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.8494166666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bf1c1530-aa28-4daa-821d-b2d0bc04406b}</destination>
+		</relationship>
+	</object>
+</objects>
