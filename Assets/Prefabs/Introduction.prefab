@@ -68,6 +68,6 @@ MonoBehaviour:
       shouldn\u2019t meddle too much with human affairs."
     - But every once in a while the water spirit chooses to nudge a little bit of
       magic here and there for the sake of a merrier day for all.
-  TimePerPart: 8
+  TimePerPart: 0
   FadeInTime: 3
   StartWaitTime: 3
