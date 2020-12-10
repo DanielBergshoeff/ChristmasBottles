@@ -61,7 +61,7 @@ public class Bottle : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision) {
         if (collision.collider.CompareTag("Land")) {
-            AudioManager.PlayOnMe(LandSound, transform);
+            AudioManager.PlayOnMe(LandSound, Camera.main.transform);
         }
     }
 
