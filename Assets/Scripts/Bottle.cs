@@ -46,8 +46,7 @@ public class Bottle : MonoBehaviour
         }
 
         foreach (Current c in myCurrents) {
-            if(myRigidbody.velocity.sqrMagnitude < c.MaxSpeed * c.MaxSpeed)
-                myRigidbody.AddForce(c.transform.forward * c.Speed);
+            myRigidbody.AddForce(c.transform.forward * c.Speed);
         }
 
         var v = myRigidbody.velocity;
