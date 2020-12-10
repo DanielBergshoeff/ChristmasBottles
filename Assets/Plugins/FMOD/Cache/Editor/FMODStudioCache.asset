@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ChristmasBottles/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637426975104684898
+  lastModified: 637429240632280004
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ChristmasBottles/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637426975104664887
+  lastModified: 637432122255175892
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -262,11 +262,11 @@ MonoBehaviour:
   Banks:
   - {fileID: -4543001216012497559}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 38095
 --- !u!114 &-600193601524836821
 MonoBehaviour:
@@ -334,7 +334,7 @@ MonoBehaviour:
   - {fileID: -4543001216012497559}
   StringsBanks:
   - {fileID: -4636949036890532658}
-  stringsBankWriteTime: 637426975104684898
+  stringsBankWriteTime: 637429240632280004
   cacheVersion: 5
 --- !u!114 &211924874230211244
 MonoBehaviour:
@@ -375,13 +375,13 @@ MonoBehaviour:
   guid: 5077ea5b7278044ab5d7e064786b17c9
   Banks:
   - {fileID: -4543001216012497559}
-  IsStream: 1
-  Is3D: 1
+  IsStream: 0
+  Is3D: 0
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 68869
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 66782
 --- !u!114 &555293400763568382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,12 +422,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -4543001216012497559}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 109655
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 135652
 --- !u!114 &1168158021198327487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,12 +468,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -4543001216012497559}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 88800
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 104615
 --- !u!114 &2280895655691139823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3648
+  Length: 5217
 --- !u!114 &8672607537692655148
 MonoBehaviour:
   m_ObjectHideFlags: 0
