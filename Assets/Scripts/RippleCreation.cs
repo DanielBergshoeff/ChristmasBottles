@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RippleCreation : MonoBehaviour
 {
+    public LayerMask WaterLayer;
     public GameObject RipplePrefab;
 
     // Start is called before the first frame update
@@ -23,7 +24,7 @@ public class RippleCreation : MonoBehaviour
     private void StartRipple() {
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if(Physics.Raycast(ray, out hit, 100f)){
+        if(Physics.Raycast(ray, out hit, 100f, WaterLayer)){
             if (!hit.collider.CompareTag("Water"))
                 return;
 

@@ -1,10 +1,14 @@
-﻿using System.Collections;
+﻿using FMODUnity;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
+    [FMODUnity.EventRef]
+    public string InterfaceSound;
+
     public GameObject PausePanel;
 
     private bool paused = false;
@@ -21,19 +25,28 @@ public class PauseMenu : MonoBehaviour
     }
 
     public void Quit() {
+        PlayInterfaceSound();
         Application.Quit();
+#if UNITY_EDITOR
         EditorApplication.isPlaying = false;
+#endif
     }
 
     public void Pause() {
+        PlayInterfaceSound();
         Time.timeScale = 0f;
         PausePanel.SetActive(true);
         paused = true;
     }
 
     public void UnPause() {
+        PlayInterfaceSound();
         Time.timeScale = 1f;
         PausePanel.SetActive(false);
         paused = false;
+    }
+
+    public void PlayInterfaceSound() {
+        RuntimeManager.PlayOneShot(InterfaceSound);
     }
 }
