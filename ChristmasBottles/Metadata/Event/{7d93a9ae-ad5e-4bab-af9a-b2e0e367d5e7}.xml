@@ -5,7 +5,7 @@
 			<value>LetterIntoBottle</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{a0acfd0d-0af7-4b59-9291-4b5782e3c5d1}</destination>
@@ -119,7 +119,6 @@
 	<object class="MixerBusEffectChain" id="{cdc05a1b-285d-4577-a92f-761a81183dfe}">
 		<relationship name="effects">
 			<destination>{e6955fa8-7698-4a7d-af58-332633f27010}</destination>
-			<destination>{f92423d9-bf8b-4756-8ec4-1ef215f05431}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9a592590-18b1-4827-8f26-1846f5ff8000}" />
@@ -139,7 +138,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{de383093-2aa6-4d23-82a5-9e05f7aa7b85}" />
 	<object class="MixerBusFader" id="{e6955fa8-7698-4a7d-af58-332633f27010}" />
-	<object class="SpatialiserEffect" id="{f92423d9-bf8b-4756-8ec4-1ef215f05431}" />
 	<object class="AutomationPoint" id="{0ded5169-2654-4754-8a6f-4845b1a998ae}">
 		<property name="position">
 			<value>2</value>
