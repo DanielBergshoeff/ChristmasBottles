@@ -11,13 +11,13 @@ public class GameManager : MonoBehaviour
     public FloatEvent FadeOutEvent;
 
     public VoidEvent RestartGameEvent;
-    public VoidEvent NextLevelEvent;
+    //public VoidEvent NextLevelEvent;
     public float FadeOutTime = 3f;
     
 
     private void Start() {
         RestartGameEvent.Register(StartRestartGame);
-        NextLevelEvent.Register(StartNextLevel);
+        //NextLevelEvent.Register(StartNextLevel);
     }
 
     public void StartRestartGame() {
@@ -43,6 +43,6 @@ public class GameManager : MonoBehaviour
 
     private void OnDestroy() {
         RestartGameEvent.Unregister(StartRestartGame);
-        NextLevelEvent.Unregister(StartNextLevel);
+        //NextLevelEvent.Unregister(StartNextLevel);
     }
 }

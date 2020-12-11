@@ -54985,6 +54985,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8606660386850388818, guid: 440279176e396a344a58433da274fb1f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8927507600319393657, guid: 440279176e396a344a58433da274fb1f,
         type: 3}
       propertyPath: m_RenderMode

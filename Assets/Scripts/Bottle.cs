@@ -12,6 +12,9 @@ public class Bottle : MonoBehaviour
     public string LandSound;
 
     [FMODUnity.EventRef]
+    public string RippleHitSound;
+
+    [FMODUnity.EventRef]
     public string WaterCurrentSound;
 
     public FloatVariable MoveSpeed;
@@ -69,6 +72,7 @@ public class Bottle : MonoBehaviour
         if (other.CompareTag("Ripple")) {
             Ripple r = other.GetComponentInParent<Ripple>();
             if (!myRipples.Contains(r)) {
+                AudioManager.PlayOnMe(RippleHitSound, transform);
                 myRipples.Add(r);
             }
         }
