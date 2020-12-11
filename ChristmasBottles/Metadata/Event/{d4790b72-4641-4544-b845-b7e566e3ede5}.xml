@@ -149,13 +149,16 @@
 		<property name="maximumTimeBetweenSounds">
 			<value>16000</value>
 		</property>
+		<property name="minimumScatterDistance">
+			<value>6</value>
+		</property>
 		<relationship name="sound">
 			<destination>{0968fea2-3728-4f2e-acc4-126e9cca1658}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{473a4838-f6c2-4e22-bc32-8c07c9143713}">
 		<property name="volume">
-			<value>5</value>
+			<value>10</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>
@@ -186,13 +189,19 @@
 		<property name="maximumTimeBetweenSounds">
 			<value>10000</value>
 		</property>
+		<property name="minimumScatterDistance">
+			<value>5</value>
+		</property>
+		<property name="maximumScatterDistance">
+			<value>8.40000057</value>
+		</property>
 		<relationship name="sound">
 			<destination>{2880f845-9b70-42c6-9852-c3d25724d10b}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{6347e39f-0fe0-4d98-83c9-0e8bcd5bab72}">
 		<property name="volume">
-			<value>4</value>
+			<value>7</value>
 		</property>
 		<property name="name">
 			<value>Audio 3</value>
