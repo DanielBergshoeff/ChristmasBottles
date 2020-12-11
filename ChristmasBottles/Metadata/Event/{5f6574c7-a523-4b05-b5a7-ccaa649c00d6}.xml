@@ -336,6 +336,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{25334928-269a-4b6c-8820-eb3baccac2f4}">
+		<property name="volume">
+			<value>1.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 3</value>
 		</property>
@@ -498,6 +501,9 @@
 		<property name="minimumScatterDistance">
 			<value>6</value>
 		</property>
+		<property name="maximumScatterDistance">
+			<value>8.80000019</value>
+		</property>
 		<relationship name="sound">
 			<destination>{499ead92-65e9-41d0-b24e-dabdb541ad18}</destination>
 		</relationship>
@@ -549,7 +555,7 @@
 			<value>5</value>
 		</property>
 		<property name="maximumScatterDistance">
-			<value>8.40000057</value>
+			<value>9.40000057</value>
 		</property>
 		<relationship name="sound">
 			<destination>{56e7b095-e82b-4128-a40f-ef293a099e6c}</destination>
@@ -557,7 +563,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{e436b104-a3b8-4638-9870-ec41507d061b}">
 		<property name="volume">
-			<value>8</value>
+			<value>10</value>
 		</property>
 		<property name="name">
 			<value>Audio 7</value>
@@ -704,6 +710,7 @@
 		<relationship name="effects">
 			<destination>{ab799c27-e935-4fb2-869f-5be9f63692e6}</destination>
 			<destination>{dccdf5b7-c145-4e26-b35b-779535d5000d}</destination>
+			<destination>{13340025-ee31-447c-90fc-f71c5f9484c9}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{cd468fc2-36e6-4118-ba04-aa22fde87e91}" />
@@ -720,6 +727,7 @@
 	<object class="MixerBusEffectChain" id="{6c664a6e-032d-4259-8ba1-6faeab4cb966}">
 		<relationship name="effects">
 			<destination>{be77634c-c5e1-42fb-b843-e06272f6ff03}</destination>
+			<destination>{4d758f1f-bb59-4b8b-a277-11b9542794a3}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{50c5796d-6b5d-4371-a124-32aaa9d68331}" />
@@ -781,7 +789,7 @@
 	<object class="MixerBusFader" id="{1d4798bd-0ec4-482c-8742-25615dbacde4}" />
 	<object class="GainEffect" id="{81577ed4-0720-4483-8d88-73b377205174}">
 		<property name="gain">
-			<value>4.5</value>
+			<value>10</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{28617bd8-e74c-45fc-ba03-2c92ad821891}">
@@ -860,6 +868,11 @@
 			<value>10</value>
 		</property>
 	</object>
+	<object class="GainEffect" id="{13340025-ee31-447c-90fc-f71c5f9484c9}">
+		<property name="gain">
+			<value>5</value>
+		</property>
+	</object>
 	<object class="SingleSound" id="{9fa6fddb-01ed-4901-b2d6-85132380028e}">
 		<relationship name="audioFile">
 			<destination>{a9d7d1fc-a6a9-4c86-b176-6aace1253c5b}</destination>
@@ -903,4 +916,9 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{be77634c-c5e1-42fb-b843-e06272f6ff03}" />
+	<object class="GainEffect" id="{4d758f1f-bb59-4b8b-a277-11b9542794a3}">
+		<property name="gain">
+			<value>4</value>
+		</property>
+	</object>
 </objects>

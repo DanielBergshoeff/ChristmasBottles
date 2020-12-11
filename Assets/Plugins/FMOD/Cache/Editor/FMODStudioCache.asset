@@ -17,11 +17,11 @@ MonoBehaviour:
   Banks:
   - {fileID: -4543001216012497559}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 1344
 --- !u!114 &-7014808865997469730
 MonoBehaviour:
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ChristmasBottles/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637432455662991346
+  lastModified: 637432848081941596
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ChristmasBottles/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637432455662961312
+  lastModified: 637432848081911565
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -239,11 +239,11 @@ MonoBehaviour:
   Banks:
   - {fileID: -4543001216012497559}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 2756
 --- !u!114 &-1085625594226189485
 MonoBehaviour:
@@ -262,12 +262,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -4543001216012497559}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 72000
+  Length: 79071
 --- !u!114 &-600193601524836821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,7 +331,7 @@ MonoBehaviour:
   - {fileID: -4543001216012497559}
   StringsBanks:
   - {fileID: -4636949036890532658}
-  stringsBankWriteTime: 637432455662991346
+  stringsBankWriteTime: 637432848081941596
   cacheVersion: 5
 --- !u!114 &211924874230211244
 MonoBehaviour:
@@ -350,11 +350,11 @@ MonoBehaviour:
   Banks:
   - {fileID: -4543001216012497559}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 1068
 --- !u!114 &237077872411197894
 MonoBehaviour:
@@ -373,12 +373,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -4543001216012497559}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 82285
+  Length: 92785
 --- !u!114 &555293400763568382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,12 +419,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -4543001216012497559}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 141806
+  Length: 145490
 --- !u!114 &1168158021198327487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,12 +465,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -4543001216012497559}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 110769
+  Length: 144071
 --- !u!114 &2280895655691139823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,11 +557,11 @@ MonoBehaviour:
   Banks:
   - {fileID: -4543001216012497559}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 72310
 --- !u!114 &7127335395197816971
 MonoBehaviour:
