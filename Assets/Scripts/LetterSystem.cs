@@ -64,7 +64,7 @@ public class LetterSystem : MonoBehaviour
             go.SetActive(false);
         }
 
-        AudioManager.PlayOnMe(LetterOpen, transform);
+        AudioManager.PlayOnMe(LetterOpen, Camera.main.transform);
 
         NextPart();
     }
@@ -105,7 +105,7 @@ public class LetterSystem : MonoBehaviour
         }
         Letter.SetActive(false);
 
-        AudioManager.PlayOnMe(LetterClose, transform);
+        AudioManager.PlayOnMe(LetterClose, Camera.main.transform);
 
         if(!CheckForNewLetter())
             NextLevelEvent.Raise();

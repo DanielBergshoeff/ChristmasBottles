@@ -38,20 +38,20 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.28502715, g: 0.3713945, b: 0.49601108, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
     m_EnvironmentLightingMode: 1
-    m_EnableBakedLightmaps: 1
+    m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 12
@@ -972,6 +972,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
         type: 3}
+      propertyPath: IntroductionText.Parts.Array.data[1]
+      value: "On most days, this spirit keeps to itself: it's rather shy and knows
+        it shouldn\u2019t meddle too much with human affairs."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
+        type: 3}
       propertyPath: IntroMusic
       value: event:/Music/Intro
       objectReference: {fileID: 0}
@@ -979,11 +985,6 @@ PrefabInstance:
         type: 3}
       propertyPath: PostIntroMusic
       value: event:/Music/Level1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
-        type: 3}
-      propertyPath: TimePerPart
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2360468535008869126, guid: 6e89b052b40b6194498eaeb12e4c6aef,
         type: 3}
