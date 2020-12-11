@@ -973,7 +973,7 @@ PrefabInstance:
     - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
         type: 3}
       propertyPath: IntroductionText.Parts.Array.data[1]
-      value: "On most days, this spirit keeps to itself: it's rather shy and knows
+      value: "On most days, this spirit keeps to itself; it's rather shy and knows
         it shouldn\u2019t meddle too much with human affairs."
       objectReference: {fileID: 0}
     - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
@@ -985,6 +985,22 @@ PrefabInstance:
         type: 3}
       propertyPath: PostIntroMusic
       value: event:/Music/Level1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
+        type: 3}
+      propertyPath: IntroductionText.Parts.Array.data[2]
+      value: But every once in a while, the water spirit chooses to nudge a little
+        bit of magic here and there, for the sake of a merrier day for all.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
+        type: 3}
+      propertyPath: StartWaitTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
+        type: 3}
+      propertyPath: TimePerPart
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2360468535008869126, guid: 6e89b052b40b6194498eaeb12e4c6aef,
         type: 3}
@@ -8049,6 +8065,31 @@ PrefabInstance:
     - target: {fileID: 1310256824, guid: 440279176e396a344a58433da274fb1f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2311196199758006341, guid: 440279176e396a344a58433da274fb1f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591931063285370222, guid: 440279176e396a344a58433da274fb1f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnPause
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591931063285370222, guid: 440279176e396a344a58433da274fb1f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5413448159308150758, guid: 440279176e396a344a58433da274fb1f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5413448159308150758, guid: 440279176e396a344a58433da274fb1f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5490433947782228806, guid: 440279176e396a344a58433da274fb1f,
         type: 3}
