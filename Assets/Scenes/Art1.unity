@@ -973,7 +973,7 @@ PrefabInstance:
     - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
         type: 3}
       propertyPath: IntroductionText.Parts.Array.data[1]
-      value: "On most days, this spirit keeps to itself: it's rather shy and knows
+      value: "On most days, this spirit keeps to itself; it's rather shy and knows
         it shouldn\u2019t meddle too much with human affairs."
       objectReference: {fileID: 0}
     - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
@@ -985,6 +985,22 @@ PrefabInstance:
         type: 3}
       propertyPath: PostIntroMusic
       value: event:/Music/Level1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
+        type: 3}
+      propertyPath: IntroductionText.Parts.Array.data[2]
+      value: But every once in a while, the water spirit chooses to nudge a little
+        bit of magic here and there, for the sake of a merrier day for all.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
+        type: 3}
+      propertyPath: StartWaitTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360468535008869125, guid: 6e89b052b40b6194498eaeb12e4c6aef,
+        type: 3}
+      propertyPath: TimePerPart
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2360468535008869126, guid: 6e89b052b40b6194498eaeb12e4c6aef,
         type: 3}
