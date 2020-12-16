@@ -11,6 +11,7 @@ public class DialoguePromptManager : MonoBehaviour
     private string currentDialogue;
     private float dialogueTimer = 0f;
     private TMPro.TextMeshProUGUI dialogueText;
+    private float cooldownTimer = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +27,13 @@ public class DialoguePromptManager : MonoBehaviour
         if (currentDialogue == "")
             return;
 
-        if (Input.GetMouseButtonDown(0)) {
-            if (dialogueTimer < 1f)
-                dialogueTimer = 1f;
+        if (cooldownTimer > 0f) {
+            cooldownTimer -= Time.deltaTime;
+        }
+
+        if (Input.GetMouseButtonDown(0) && cooldownTimer <= 0f && dialogueTimer < 1f) {
+            cooldownTimer = 0.1f;
+            dialogueTimer = 1f;
         }
 
         dialogueTimer += (Time.deltaTime / currentDialogue.Length) * TextSpeed;
