@@ -41,7 +41,8 @@ public class Ripple : MonoBehaviour
         else {
             t = t / timeTillFull;
             colliderTransform.localScale = new Vector3(t * totalSize, t * totalSize, t * totalSize);
-            myMeshRenderer.material.SetFloat("_RipplePos", t * 2f);
+            myMeshRenderer.material.SetFloat("_RipplePos", t );
+            myMeshRenderer.material.SetVector("_RippleLocation",transform.position);
         }
     }
 

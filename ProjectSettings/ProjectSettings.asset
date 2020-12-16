@@ -675,7 +675,8 @@ PlayerSettings:
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}
   allowUnsafeCode: 0
-  additionalIl2CppArgs: 
+  additionalIl2CppArgs: --additional-cpp="D:/Users/Ilja/Documents/ChristmasBottles/Assets/../Temp/fmod_register_static_plugins.cpp"
+    --additional-cpp="D:/Users/Ilja/Documents/ChristmasBottles/Assets/Plugins/FMOD/src/Runtime/fmod_static_plugin_support.h"
   scriptingRuntimeVersion: 1
   gcIncremental: 0
   gcWBarrierValidation: 0
